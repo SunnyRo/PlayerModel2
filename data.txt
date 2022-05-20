@@ -1,0 +1,4 @@
+Bot,a8e4f6af-62d7-49b9-9279-44c11580e8a9,e4f6aBOT,e4f6a@Dotnet.com,99
+Bot,54414311-f419-455c-8ec5-4794e2ea1bf0,41431BOT,41431@Dotnet.com,99
+Bot,76a60df9-c5d7-40e8-a62b-045b80dd053a,a60dfBOT,a60df@Dotnet.com,99
+Player,7374d66e-8244-4516-844d-aec9c87f8c5e,son,vo@gmail.com,1
