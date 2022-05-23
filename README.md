@@ -7,3 +7,9 @@
 ### it also give user different options to print the data that user've created.
 
 ### This app have some input validation so please make sure you enter the right input.
+
+# **Updated 05/22/2022**
+
+### used the extension methods to print player information
+
+### Write all models to both data.txt and data.json

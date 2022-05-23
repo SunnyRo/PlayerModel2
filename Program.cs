@@ -1,10 +1,12 @@
 ﻿using System.Text.RegularExpressions;
+using System.Text.Json;
 // Declare variable
 string userInput;
 string[] userInfo;
 string option;
 bool run = true;
 List<PlayerModel> allModels = new List<PlayerModel>();
+JsonSerializerOptions obtion = new() { WriteIndented = true };
 // input validation method check if the input is empty or null
 static bool isValid(String para)
 {
@@ -42,12 +44,6 @@ static bool isNumber(string number)
     }
     return true;
 }
-static void PrintPlayerInfo(PlayerModel player)
-{
-    Console.WriteLine($"Name:{player.Name}");
-    Console.WriteLine($"Email:{player.Email}");
-    Console.WriteLine($"Id:{player.Id}");
-}
 
 try
 {
@@ -60,7 +56,7 @@ try
         Console.WriteLine("Enter 2 (Cheat) Load a player with a given Level");
         Console.WriteLine("Enter 3 Create a bot");
         Console.WriteLine("Enter 4 Print all the models");
-        Console.WriteLine("Enter 5 Write all user data to data.txt");
+        Console.WriteLine("Enter 5 Write all user data to data.txt and data.json in current folder/directory");
         Console.WriteLine("Enter 6 Stop");
         option = Console.ReadLine();
         Console.WriteLine($"You've entered \"{option}\"!");
@@ -108,23 +104,26 @@ try
             foreach (PlayerModel model in allModels)
             {
                 Console.WriteLine("----------------------------------------------");
-                Console.WriteLine($"Type: {model.ModelType}");
-                Console.WriteLine($"Id: {model.Id}");
-                Console.WriteLine($"Name: {model.Name}");
-                Console.WriteLine($"Email: {model.Email}");
-                Console.WriteLine($"Level: {model.Level}");
+                model.printInfo();
             }
         }
         else if (option == "5")
         {
-            // writting all user data to data.txt
-            using (StreamWriter sw = new StreamWriter("data.txt"))
+            // writting all user data to data.txt and data.json
+            using (StreamWriter fw = new StreamWriter("data.txt"))
             {
                 foreach (PlayerModel model in allModels)
                 {
-                    sw.WriteLine(model.ModelType + "," + model.Id + "," + model.Name + "," + model.Email + "," + model.Level);
+                    fw.WriteLine(model.ModelType + "," + model.Id + "," + model.Name + "," + model.Email + "," + model.Level);
                 }
             }
+            var options = new JsonSerializerOptions()
+            {
+                WriteIndented = true
+            };
+            var jsonString = JsonSerializer.Serialize(allModels, options);
+            File.WriteAllText("data.json", jsonString);
+
             Console.WriteLine("Done writting to a file.");
         }
         else if (option == "6")

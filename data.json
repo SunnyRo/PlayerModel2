@@ -1,0 +1,30 @@
+[
+  {
+    "Id": "496be754-71da-4979-b87e-89d305dd3654",
+    "Name": "6be75BOT",
+    "Email": "6be75@Dotnet.com",
+    "Level": "99",
+    "ModelType": "Bot"
+  },
+  {
+    "Id": "e4660875-1b35-4858-a252-4a08de3ad490",
+    "Name": "66087BOT",
+    "Email": "66087@Dotnet.com",
+    "Level": "99",
+    "ModelType": "Bot"
+  },
+  {
+    "Id": "aaa0ebc3-9204-455e-8c03-6d2d1d02d5ed",
+    "Name": "a0ebcBOT",
+    "Email": "a0ebc@Dotnet.com",
+    "Level": "99",
+    "ModelType": "Bot"
+  },
+  {
+    "Id": "19a6d396-35bc-428c-854e-80f653d54c09",
+    "Name": "a6d39BOT",
+    "Email": "a6d39@Dotnet.com",
+    "Level": "99",
+    "ModelType": "Bot"
+  }
+]

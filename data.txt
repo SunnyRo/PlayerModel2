@@ -1,4 +1,4 @@
-Bot,a8e4f6af-62d7-49b9-9279-44c11580e8a9,e4f6aBOT,e4f6a@Dotnet.com,99
-Bot,54414311-f419-455c-8ec5-4794e2ea1bf0,41431BOT,41431@Dotnet.com,99
-Bot,76a60df9-c5d7-40e8-a62b-045b80dd053a,a60dfBOT,a60df@Dotnet.com,99
-Player,7374d66e-8244-4516-844d-aec9c87f8c5e,son,vo@gmail.com,1
+Bot,496be754-71da-4979-b87e-89d305dd3654,6be75BOT,6be75@Dotnet.com,99
+Bot,e4660875-1b35-4858-a252-4a08de3ad490,66087BOT,66087@Dotnet.com,99
+Bot,aaa0ebc3-9204-455e-8c03-6d2d1d02d5ed,a0ebcBOT,a0ebc@Dotnet.com,99
+Bot,19a6d396-35bc-428c-854e-80f653d54c09,a6d39BOT,a6d39@Dotnet.com,99
